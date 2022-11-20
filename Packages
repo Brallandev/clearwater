@@ -1,0 +1,43 @@
+Package: cassandra
+Version: 4.0.7
+Architecture: all
+Maintainer: Eric Evans <eevans@apache.org>
+Installed-Size: 57410
+Depends: openjdk-8-jre-headless | java8-runtime | openjdk-11-jre-headless | java11-runtime, adduser, python3 (>= 3.6), procps
+Recommends: ntp | time-daemon
+Suggests: cassandra-tools
+Conflicts: apache-cassandra1
+Replaces: apache-cassandra1
+Homepage: http://cassandra.apache.org
+Priority: extra
+Section: misc
+Filename: pool/main/c/cassandra/cassandra_4.0.7_all.deb
+Size: 47522800
+SHA256: 5cda40a2e0a216d37776f3312577cc33c14bc7ac02e44b976175bca2ba60ee39
+SHA1: 6c620de72eec86b2b13fb82d035527971d842083
+MD5sum: 9b5f3e296e76667dd82bbcd27ec7170f
+Description: distributed storage system for structured data
+ Cassandra is a distributed (peer-to-peer) system for the management
+ and storage of structured data.
+
+Package: cassandra-tools
+Source: cassandra
+Version: 4.0.7
+Architecture: all
+Maintainer: Eric Evans <eevans@apache.org>
+Installed-Size: 27
+Depends: cassandra (= 4.0.7)
+Homepage: http://cassandra.apache.org
+Priority: extra
+Section: misc
+Filename: pool/main/c/cassandra/cassandra-tools_4.0.7_all.deb
+Size: 4924
+SHA256: f4ede6136782e38d7c344e1e1c59e69657a9246e114883136b6173a7cdfb53eb
+SHA1: fde2ffb8c9d211b3140ad4249fb12415a88a5084
+MD5sum: c6d3dac2dc38954e502cd170fe8b06cf
+Description: distributed storage system for structured data
+ Cassandra is a distributed (peer-to-peer) system for the management
+ and storage of structured data.
+ .
+ This package contains extra tools for working with Cassandra clusters.
+
